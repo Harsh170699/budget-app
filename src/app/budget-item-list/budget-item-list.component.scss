@@ -1,13 +1,13 @@
 @import '../../main-styles.scss';
 
-.budget-item-section {
+.budget-items-section {
   display: flex;
   padding: 50px;
 
   justify-content: center;
   align-items: center;
 
-  .budget-item-container {
+  .budget-items-container {
     display: flex;
     max-width: 680px;
     height: 100%;
@@ -24,6 +24,26 @@
         font-size: 24px;
         font-weight: 900;
         text-transform: uppercase;
+      }
+
+      .budget-tems {
+        display: flex;
+        flex-direction: column;
+        margin-top: 20px;
+
+      }
+    }
+
+    .income-column {
+      margin-right: 35px;
+      h1 {
+        color: $green;
+      }
+    }
+
+    .expenses-column {
+      h1 {
+        color: $red;
       }
     }
   }
